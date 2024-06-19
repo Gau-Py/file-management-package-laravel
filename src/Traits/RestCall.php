@@ -76,8 +76,8 @@ trait RestCall
     private function getClient()
     {
         $client = new Client([
-            'timeout' => 5, // Response timeout
-            'connect_timeout' => 5, // Connection timeout
+            'timeout' => 20, // Response timeout
+            'connect_timeout' => 20, // Connection timeout
         ]);
 
         return $client;
